@@ -38,7 +38,7 @@ class XmlReport implements JUnitReport {
 
         final children = <XmlNode>[];
         if (test.isSkipped) {
-          children.add(elem('skipped', _noAttributes, _noChildren));
+          //children.add(elem('skipped', _noAttributes, _noChildren));
         }
         if (test.problems.isNotEmpty) {
           children.add(_problems(test.problems));
