@@ -107,10 +107,10 @@ class XmlReport implements JUnitReport {
       ];
 
   void _prints(Iterable<String> from, List<XmlNode> to) {
-    if (from.isNotEmpty) {
+    /*if (from.isNotEmpty) {
       to.add(
           elem('system-out', _noAttributes, <XmlNode>[txt(from.join('\n'))]));
-    }
+    }*/
   }
 
   List<XmlElement> _properties(String? platform) => platform == null
